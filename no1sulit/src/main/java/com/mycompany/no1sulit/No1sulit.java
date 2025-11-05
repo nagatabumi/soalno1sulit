@@ -1,0 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.no1sulit;
+
+/**
+ *
+ * @author LENOVO
+ */
+import java.util.Scanner;
+public class No1sulit {
+
+     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("=== PROGRAM REKAP NILAI PRODUKTIF RPL ===");
+        System.out.print("Masukkan jumlah siswa: ");
+        int jumlahSiswa = input.nextInt();
+
+        double totalNilai = 0;
+
+        for (int i = 1; i <= jumlahSiswa; i++) {
+            System.out.print("Masukkan nilai siswa ke-" + i + ": ");
+            double nilai = input.nextDouble();
+            totalNilai += nilai;
+        }
+
+        double rataRata = totalNilai / jumlahSiswa;
+        System.out.println("\nJumlah siswa : " + jumlahSiswa);
+        System.out.println("Rata-rata nilai ujian : " + rataRata);
+    }
+}
+
